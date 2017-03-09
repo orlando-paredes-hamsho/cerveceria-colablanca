@@ -1,0 +1,436 @@
+/*---------------------------------
+	IMPORTS
+-----------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+font-family: 'Lato', sans-serif;
+font-weight:normal;
+line-height: 1.2;
+}
+
+thead th,
+tbody th{
+font-family: 'Lato', sans-serif;
+}
+
+button,
+a.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+font-family: 'Lato', sans-serif;
+}
+
+.nav{
+font-family: 'Lato', sans-serif;
+}
+
+blockquote{
+font-family: 'Lato', sans-serif;
+}
+
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body{
+margin:0;
+padding:0;
+color:#666;
+background:#fff;
+font:normal 18px/150% 'Lato', sans-serif;
+text-shadow: 0 0 1px transparent; /* google font pixelation fix */
+}
+/*------------------------
+   Html Elements
+--------------------------*/
+a,
+a:hover,
+a:active {
+text-decoration: none;
+}
+
+img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/*------------------------
+    Video-Container
+--------------------------*/
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/*------------------------
+    Clear Floted Elements
+--------------------------*/
+.clear {
+clear: both;
+display: block;
+overflow: hidden;
+visibility: hidden;
+width: 0;
+height: 0;
+}
+.clearfix:before,
+.clearfix:after {
+content: '\0020';
+display: block;
+overflow: hidden;
+visibility: hidden;
+width: 0;
+height: 0;
+}
+.clearfix:after {
+clear: both;
+}
+.clearfix {
+zoom: 1;
+}
+/*------------------------
+    Helpers
+--------------------------*/
+.hide{display: none;}
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0,0,0,0);
+border: 0;
+}
+.circle{
+-webkit-border-radius: 200em;
+-moz-border-radius: 200em;
+border-radius: 200em;
+-khtml-border-radius: 200em;
+position: relative;
+}
+	.circle img, .circle .fa{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	}
+.hero-img{width: 100%; position: relative;}
+	.hero-img img{width: 100%; height: auto; display: block;}
+
+.center-align{text-align: center;}
+
+/*------------------------
+    Button
+--------------------------*/
+a.button,
+a.button:hover,
+a.button:visited,
+a.button:focus,
+button,
+button:hover,
+button:visited,
+button:focus{
+display: inline-block;
+text-align: center;
+padding: 1em 2em;
+font-size: 1.33em;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+cursor: pointer;
+}
+
+/*------------------------------------------------
+                    Sections
+--------------------------------------------------*/
+.nav{
+list-style: none;
+width: 100%;
+display: block;	
+margin:0;
+padding:0;
+text-align: center;
+position: fixed;
+top:0;
+z-index: 1;
+font-size: 0;
+overflow: hidden;
+padding-bottom: 10%;
+opacity: 0.8;
+}
+	.nav-bg{ background: #532F0A; }
+	.nav li{
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	}
+		.nav li a{
+		display: block;
+		color: #fff;
+		padding: 1em 0;
+		width: 100%;
+		}
+    .logo{
+	position: relative;
+    }
+    	.logo .circle{
+	  	width: 80%;
+	    padding-top: 80%;
+	    top: 0;
+	    left: 10%;
+	    transform: translate(0,-40%);
+	    position: absolute;
+	    background: #532F0A;
+		}
+			.logo .circle .fa{
+			top: 65%;
+			left: 48%;
+			font-size: 3em;
+			}
+/*------------------------
+    Top
+--------------------------*/
+.text-bubble{
+position: absolute;
+bottom:0;
+left:0;
+-webkit-transform:translate(25%,-25%);
+-moz-transform:translate(25%,-25%);
+transform:translate(25%,-25%);
+background: #AA671D;
+background: rgba(170,103,29,0.45);
+width: 350px;
+max-width: 50%;
+border-radius: 10px;
+padding: 2%;
+color: #fff;
+}
+	.text-bubble a{ 
+	color: #fff; 
+	display: block;
+	text-align: right;
+	text-decoration: underline;
+	}
+	
+a.button.main{
+position: absolute;
+right: 0;
+top: 50%;
+-webkit-transform:translate(-100%,50%);
+-moz-transform:translate(-100%,50%);
+transform:translate(-100%,50%);
+background: #AA671D;
+background: rgba(170,103,29,0.6);
+color: #fff;
+}
+
+/*------------------------
+    General
+--------------------------*/
+section:not(#top){
+padding: 5%;
+}
+section#top{
+padding:0;
+}
+
+/*------------------------
+    About
+--------------------------*/
+#about{
+background:#7B4812;
+color:#fff;
+}
+#about h3{
+font-size: 2.2em;
+text-align: center;
+}
+.circles-n-text{
+padding: 0;
+margin: 0;
+list-style: none;
+font-size: 0;
+}
+	.circles-n-text li{
+	font-size: 18px;
+	padding: 5%;
+	margin: 0;
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	}
+		.circles-n-text h4{
+		font-size: 1.4em; 
+		}
+		.circles-n-text p{
+		font-size: 0.8em;
+		}
+	.circles-n-text .circle{
+	background:#fff;
+	color:rgb(123,72,18);
+	width: 100%;
+	padding-top: 100%;
+	font-size: 2em;
+	}
+	
+/*------------------------
+    Find Us
+--------------------------*/
+#find-us{
+}
+	#find-us h3{
+	font-size: 2.2em;
+	padding: 0 0 1em 0;
+	text-align: center;
+	}
+	#find-us iframe{
+	display: block;
+	margin: 0 auto;
+	}
+.overlay {
+background:transparent; 
+position:relative; 
+width:100%;
+height:600px; /* your iframe height */
+top:600px;  /* your iframe height */
+margin-top:-600px;  /* your iframe height */
+}
+/*------------------------
+    Contact
+--------------------------*/
+#contact{
+position: relative;
+background: rgba(123,72,18,0.75);
+color:#fff;
+}
+#contact::after {
+content: "";
+background: url(../img/beer-mugs.jpg);
+background-size: cover;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;   
+}
+#contact h3{
+font-size: 1.4em
+}
+form.contact{
+padding: 0;
+margin: 0;
+}
+.contact fieldset{
+padding:0;
+margin:1em 0;
+border:0;
+position: relative;
+}
+.contact label{
+cursor: pointer;
+}
+select,input[type=text],input[type=email],textarea{
+width: 100%;
+display: block;
+font-size: 16px;
+padding: 0.8em;
+margin-top: 5px;
+}
+select{
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+	option{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	display: block;
+	font-size: 16px;
+	padding: 0.8em;
+	}
+fieldset.button-set{
+text-align: right;
+margin-top: 2em;
+}
+	.button-set button,
+	.button-set button:hover,
+	.button-set button:focus,
+	.button-set button:visited{
+    border: 0;
+    font-size: 1em;
+    background:#fff;
+    color:rgb(123,72,18);
+	}
+	
+@media (max-width: 600px) {
+	.nav{
+    display: block;
+    position: relative;
+    margin-bottom: -10%;
+    opacity: 1;
+	}
+	.nav-bg{
+	position: relative;
+	}
+		.nav li{
+		font-size: 14px;
+		}
+	/*For now*/
+	.text-bubble{
+	display: none;
+	}
+	a.button.main{
+	right: 50%;
+	transform: translate(50%,-25%);
+	-webkit-transform: translate(50%,-25%);
+	-moz-transform: translate(50%,-25%);
+	-ms-transform: translate(50%,-25%);
+	font-size: 1em;
+	white-space: nowrap;
+	}
+	.circles-n-text li{
+	width: 100%;
+	display: block;
+	}
+	.circles-n-text .circle{
+	width: 60%;
+	padding-top: 60%;
+	margin:0 auto;
+	}
+}
